@@ -23,7 +23,7 @@ include_directories(src include)
 add_subdirectory(src)
 
 if (LIBEXAMPLE_ENABLE_TESTING)
-  add_subdirectory(tst)
+  add_subdirectory(test)
 endif()
 
 if (LIBEXAMPLE_ENABLE_PACKAGING)
