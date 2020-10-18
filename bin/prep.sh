@@ -2,6 +2,11 @@
 
 set -e 
 
+trap onExit EXIT
+function onExit() {
+  popd > /dev/null
+}
+
 mkdir -p build 
 
 pushd build > /dev/null
@@ -9,6 +14,5 @@ pushd build > /dev/null
 TARGET=Debug
 [ "$1" == "RELEASE" ] && TARGET=Release
 
-cmake ../ -DCMAKE_BUILD_TYPE=i${TARGET} -G "Unix Makefiles"
+cmake ../ -DCMAKE_BUILD_TYPE=${TARGET} -G "Unix Makefiles"
 
-popd > /dev/null 

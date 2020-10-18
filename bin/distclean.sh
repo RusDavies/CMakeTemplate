@@ -2,9 +2,8 @@
 
 set -e 
 
-pushd build > /dev/null
-
-rm -rf CMakeCache.txt  CMakeFiles  cmake_install.cmake  Makefile  src  tst
-
-popd > /dev/null 
+if [ -e ./build/ ]; then
+  rm -rf ./build/ 
+  mkdir -p ./build
+fi
 
