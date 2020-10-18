@@ -2,6 +2,8 @@
 
 set -e 
 
+mkdir -p build 
+
 pushd build > /dev/null
 
 TARGET=Debug
