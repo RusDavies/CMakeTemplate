@@ -1,7 +1,7 @@
 CMAKE_MINIMUM_REQUIRED(VERSION 3.5)
 
+project(libexample VERSION 0.1.0 LANGUAGES C CXX )
 
-PROJECT(libexample VERSION 0.1.0 LANGUAGES C CXX )
 set(PROJECT_SUMMARY "Example library using cmake")
 set(PROJECT_DESCRIPTION "An library built using CMake")
 set(PROJECT_LICENSE "MIT")

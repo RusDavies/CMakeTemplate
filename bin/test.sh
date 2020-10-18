@@ -2,7 +2,7 @@
 
 set -e 
 
-TESTDIR=./build/tst 
+TESTDIR=./build/test 
 
 if [ -e "${TESTDIR}" ]; then
   
